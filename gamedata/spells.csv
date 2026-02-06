@@ -479,7 +479,7 @@ id	name	school	researchlevel	path1	pathlevel1	path2	pathlevel2	effect_record_id	
 477	Contact Angel of the Host	0	5	4	3	-1	0	477	1	0	0	7	0	3870	
 478	Contact Harbinger	0	6	4	4	-1	0	478	1	0	0	25	0	464	
 479	Angelic Choir	0	6	4	3	-1	0	479	3	0	0	15	0	1367	
-480	Angelic Host	0	7	4	5	-1	0	480	6	0	0	50	0	3870	
+480	Angelic Host	0	7	4	5	-1	0	480	7	0	0	50	0	3870	
 481	Heavenly Wrath	0	7	4	3	0	1	481	1	0	0	35	0	1369	
 482	Heavenly Choir	0	9	4	7	0	2	482	1	0	0	144	68	1368	
 483	Bind Harlequin	6	1	8	1	-1	0	483	1	0	0	1	0	1000	
