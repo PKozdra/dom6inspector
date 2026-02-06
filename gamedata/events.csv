@@ -413,7 +413,7 @@ id	name	rarity	description	requirements	effects	end
 411	The stars are right for blood 	11	The stars are right for blood magic.		worldritrebate 6|linger 3	
 412	The cold is unusually harsh th	15	The cold is unusually harsh this winter.	6500 9	worldincscale Cold	
 413	The heat is unusually severe t	15	The heat is unusually severe this summer.	6500 3	worlddecscale Cold	
-414	Word is spreading that Astrolo	12	Word is spreading that Astrologers have spotted a comet headed straight for Earth!	capital 0|code 0	code 30000|worldunrest 5	
+414	Word is spreading that Astrolo	12	Word is spreading that Astrologers have spotted a comet headed straight for Earth!	capital 0|code 0|cave 0	code 30000|worldunrest 5	
 415	A comet can be seen clearly in	10	A comet can be seen clearly in the sky, heading straight for Earth. Panic is spreading worldwide.	code 30000	worldunrest 15|code 30001	
 416	The comet has struck ##landnam	10	The comet has struck ##landname##! The impact could be seen from the other side of the world. Luckily it hit in a remote area and even though half the province was devastated, most of the population survived. [Huge Crater]	code 30001|9600 50	revealprov 1|unrest 75|code 0|kill 10|incscale2 Death|newsite -1	
 417	The comet has struck ##landnam	10	The comet has struck ##landname##! The impact could be seen from the other side of the world. The province has been devastated and most of the population annihilated. [Huge Crater]	code 30001	revealprov 1|unrest 75|code 0|kill 75|incscale2 Death|strikeunits 100|lab 0|temple 0|newsite -1	
@@ -1977,7 +1977,7 @@ id	name	rarity	description	requirements	effects	end
 1975	A host of fog-shrouded warrior	0	A host of fog-shrouded warriors have emerged from The Mist Covered Highlands. They are led by a man of power.	9600 25|code 53	code 0|com 93|addequip 1|A600 3865	
 1976	One of your agents has investi	0	One of your agents has investigated the magic of the Highlands and, when lost in its dense mists, found a cache of magic gems and an item of power. It seemed someone had hidden them on purpose.	9600 25|code 52	code 53|magicitem 2|1d6vis A	
 1977	Suddenly, the air has come to 	0	Suddenly, the air has come to life and attacked one of your commanders!	9600 15|unique 2|commander 1|code 53	2700 2|assassin 3722	
-1978	A storm has struck! From the r	0	A storm has struck! From the roiling clouds, air elementals have formed. [Bag of Winds]	9600 15|unique 1|code 53	2com 93|addequip 1|addequip 1|A300 3722	
+1978	A storm has struck! From the r	0	A storm has struck! From the roiling clouds, air elementals have formed. [Bag of Winds]	9600 15|unique 1|code 53	2com 93|addequip 1|addequip 1|A300 3724	
 1979	A host of fog-shrouded warrior	0	A host of fog-shrouded warriors have emerged from The Mist Covered Highlands. They are led by a man of power.	9600 25|freesites 1|code 53	code 161|com 341|addequip 1|6d6units 297|A300 298	
 1980	After the recent battle, the c	0	After the recent battle, the corpse of the mage was plundered. In his pockets were found a strange object. It seems to be some kind of compass. Following its lead, your men have traveled into the mists and found a place of power. Hidden at the heart of the highlands lies a lake from which mist constantly rises. Through the veils a translucent tower can be seen. [Translucent Tower]	nomonster 341|code 161|unique 1	code 0|newsite -1	
 1981	Plague is spreading among the 	2	Plague is spreading among the populace.	turn 15|noseason 3|code 0	code -16|kill 2|unrest 15	
@@ -2053,9 +2053,9 @@ id	name	rarity	description	requirements	effects	end
 2051	Your governor has prepared the	-1	Your governor has prepared the land for war.	order 0|anycode -20	defence 10	
 2052	Your governor has hired some m	0	Your governor has hired some men to serve in the upcoming war.	9600 1|land 1|anycode -20	nation -2|com 35|4d6units 40|6d6units 33|gold -100	
 2053	Some barbarian scouts have bee	1	Some barbarian scouts have been caught and interrogated. They seem to have been preparing for a large-scale attack!	land 1|turn 5|code 0|anycode -20	code 90	
-2054	Your governor has hired some m	0	Your governor has hired some men to serve in the upcoming war.	9600 1|land 0|anycode -20	nation -2|com 406|4d6units 174|6d6units 33|gold -100	
+2054	Your governor has hired some m	0	Your governor has hired some men to serve in the upcoming war.	9600 1|land 0|anycode -20	nation -2|com 406|4d6units 174|gold -100	
 2055	Some triton scouts have been c	1	Some triton scouts have been caught and interrogated. They seem to have been preparing for a large-scale attack!	land 0|turn 5|code 0|anycode -20	code 91	
-2056	You have been empowered by the	0	You have been empowered by the Throne of War! [The Throne of War]	monster 1340|claimedthrone 1|unique 1|fullowner 1|site 1	fireboost 1340|airboost 1340	
+2056	You have been empowered by the	0	You have been empowered by the Throne of War! [The Throne of War]	monster 1340|claimedthrone 1|unique 1|site 1	fireboost 1340|airboost 1340	
 2057	Some squires have been caught 	1	Some squires have been caught and interrogated. They seem to have been preparing for a large-scale attack!	land 1|code 0|turn 8|era 2|anycode -20	code 92	
 2058	A huge barbarian horde has att	1	A huge barbarian horde has attacked and pillaged the province.	9600 50|anycode -20|land 1	nation 4|com 141|16d6units 140|com 141|4d6units 139	
 2059	Some barbarian scouts have bee	1	Some barbarian scouts have been caught and interrogated. They refused to say anything about their purpose.	land 1|unluck 1|turn 10|code 0|anycode -20	code 93	
@@ -2369,8 +2369,8 @@ id	name	rarity	description	requirements	effects	end
 2367	One of your mages has been sed	0	One of your mages has been seduced by the power of blood magic and attempted to summon a demon. The summoning was successful, but the spell bonds were too weak to contain the fiend.	9600 1|targpath2 8|lab 1|gem 8|code -49	code 0|2700 6|assassin 811|gemloss B	
 2368	A demon jester has come to moc	0	A demon jester has come to mock you.	9600 6|targpath4 1|land 1|code -49	code 0|nation -2|9B00 1000	
 2369	One of your mages has conjured	0	One of your mages has conjured a devil.	9600 1|targpath2 8|lab 1|targpath4 0|code -49	code 0|com 304	
-2370	A gateway to the lower realms 	0	A gateway to the lower realms has opened, spewing forth inhabitants of that dismal place! [Demon Gate]	9600 1|freesites 1|unique 3|code -49	code 0|4com 88|A300 88|newsite -1	
-2371	People have been disappearing.	0	People have been disappearing. Alien creatures skulk in the night. Locals have given offerings of blood to appease the evil apparitions. [Demon Gate]	9600 1|unique 2|freesites 1|code -49	incdom -2|kill 1|4200 -1|stealthcom 88|2d6units 88	
+2370	A gateway to the lower realms 	0	A gateway to the lower realms has opened, spewing forth inhabitants of that dismal place! [Demon Gate]	9600 1|freesites 1|unique 3|code -49	code 0|4com 88|A300 88|CA00 -1	
+2371	People have been disappearing.	0	People have been disappearing. Alien creatures skulk in the night. Locals have given offerings of blood to appease the evil apparitions. [Demon Gate]	9600 1|unique 2|freesites 1|code -49	incdom -2|kill 1|D700 -1|stealthcom 88|2d6units 88	
 2372	A conjurer of demons has appea	0	A conjurer of demons has appeared to study the art of Blood Magic under a true master. [Sanguine Dowsing Rod]	9600 5|pathblood 5|unique 2|lab 1|code -49	nation -2|com 95|addequip 9	
 2373	A warlock has been caught red-	0	A warlock has been caught red-handed. His virgins were confiscated.	9600 2|code -49|land 1	3d6vis B	
 2374	Your temple has been desecrate	0	Your temple has been desecrated! Evil symbols were written in blood on its altar and the remains of a human sacrifice was found.	9600 5|temple 1|code -49	incdom -5|incscale2 Turmoil	
@@ -2578,12 +2578,12 @@ id	name	rarity	description	requirements	effects	end
 2576	One of your mages has tried to	1	One of your mages has tried to reveal the secrets of demonic power from a powerful devil but only managed to anger the demon and was sent to Kokytos.	targpath1 53|targpath4 0|monster 825	banished -12	
 2577	One of your mages was sucked i	1	One of your mages was sucked into the Demon Gate. If returning is possible, some insights may have been gained. [Demon Gate]	targpath1 53|targpath4 0|foundsite 1	banished -13|pathboost 4|pathboost 4|fireboost 1	
 2578	One of your mages was sucked i	1	One of your mages was sucked into the Demon Gate. If return-in is possible, some insights may have been gained. [Demon Gate]	targpath1 53|targpath4 0|foundsite 1	banished -12|pathboost 4|pathboost 4|waterboost 1	
-2579	One of your commanders agreed 	1	One of your commanders agreed to run an errand for The Goat Sun.	targpath4 0|monster 1405	banished -12	
-2580	One of your commanders agreed 	1	One of your commanders agreed to run an errand for the Arch Devil.	targpath4 0|monster 305	banished -12	
-2581	One of your commanders agreed 	1	One of your commanders agreed to run an errand for the Arch Devil.	targpath4 0|monster 826		
-2582	One of your commanders agreed 	1	One of your commanders agreed to run an errand for the Arch Devil.	targpath4 0|monster 827		
-2583	One of your commanders agreed 	1	One of your commanders agreed to run an errand for the Arch Devil.	targpath4 0|monster 828		
-2584	One of your commanders agreed 	1	One of your commanders agreed to run an errand for the Arch Devil.	targpath4 0|monster 829		
+2579	One of your commanders agreed 	1	One of your commanders agreed to run an errand for The Goat Sun.	targpath4 0|EB00 0|monster 1405	banished -12	
+2580	One of your commanders agreed 	1	One of your commanders agreed to run an errand for the Arch Devil.	targpath4 0|EB00 0|monster 305	banished -12	
+2581	One of your commanders agreed 	1	One of your commanders agreed to run an errand for the Arch Devil.	targpath4 0|EB00 0|monster 826	banished -12	
+2582	One of your commanders agreed 	1	One of your commanders agreed to run an errand for the Arch Devil.	targpath4 0|EB00 0|monster 827	banished -12	
+2583	One of your commanders agreed 	1	One of your commanders agreed to run an errand for the Arch Devil.	targpath4 0|EB00 0|monster 828	banished -12	
+2584	One of your commanders agreed 	1	One of your commanders agreed to run an errand for the Arch Devil.	targpath4 0|EB00 0|monster 829	banished -12	
 2585	One of your mages has struck a	2	One of your mages has struck a deal with the Devil. In return for some secrets he agreed just to carry a small burden for his tutor. That burden turned out to be the plague.	targpath1 53|targpath4 0|monster 305	gainaff 8|pathboost 0	
 2586	One of your mages has struck a	2	One of your mages has struck a deal with the Devil. In return for some secrets he agreed just to carry a small burden for his tutor. That burden turned out to be the plague.	targpath1 53|targpath4 0|monster 826	gainaff 8|gainaff 8	
 2587	One of your mages has struck a	2	One of your mages has struck a deal with the Devil. In return for some secrets he agreed just to carry a small burden for his tutor. That burden turned out to be the plague.	targpath1 53|targpath4 0|monster 827	gainaff 8|gainaff 8	
@@ -3185,6 +3185,7 @@ id	name	rarity	description	requirements	effects	end
 3183	A dormant decree of the Pantok	13	A dormant decree of the Pantokrator was activated when His Throne was disturbed. The decree has brought chaos to the world, people are terrified and faith in the Pretender Gods has decreased. [The Throne of the Pantokrator]	claimedthrone 1|9600 25|site 1|unique 1	worldincscale2 Turmoil|worldincdom -1	
 3184	The Throne of Eternal Sufferin	13	The Throne of Eternal Suffering has reminded people of the importance of piety. Faith and order has increased worldwide. [The Throne of Eternal Suffering]	claimedthrone 1|site 1|unique 1	worlddecscale Turmoil|worldincdom 1	
 3185	One night the moon was red as 	12	One night the moon was red as blood, the next night it was blue as water and on the third night it was gone. Then on the seventh night the moon appeared once again, this time it was white.		worldunrest 10|worlddecscale Drain|worldincscale Misfortune	
+3186	...	-9	...			
 3187	People have died from a strang	-2	People have died from a strange disease and soon after dark gems formed upon the corpses.	death 1|magic 1	0700 25|3d6vis D	
 3188	A forgotten curse suddenly too	2	A forgotten curse suddenly took effect and turned an entire village into Vine Men. The mindless apparitions are now spreading over the rest of the province.	magic 2|growth 1|turn 8|forest 1	com 362|4d6units 361|com 362|2d6units 361|kill 10	
 3189	Autumn come, the Ephoroi of th	0	Autumn come, the Ephoroi of the city have declared war upon the helote population.	fornation 6|6500 5|fort 1|monster 3115|code 0|siege 0	code 133|unrest 15	
