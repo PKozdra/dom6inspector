@@ -34,8 +34,8 @@ id	name	bossname	com	unit	nrunits	level	minmen	minpay	xp	randequip	recrate	item1
 33	The Wet Ones	Napa Tua	1637	1635	50	0	15	250	15	1	100			7	
 34	Melkorka's Green Men	Melkorka	2905	2903	50	0	10	250	15	1	100			7	
 35	Swimming Men	Pau Pau	577	577	50	0	15	250	15	1	100			7	
-36	"Dagan, the Renegade Sage"	Dagan	478	0	0	0	0	60	10	1	0			7	
-37	"Obscuro, the Hidden Master"	Obscuro	341	0	0	0	0	75	10	1	0			7	
+36	Dagan, the Renegade Sage	Dagan	478	0	0	0	0	60	10	1	0			7	
+37	Obscuro, the Hidden Master	Obscuro	341	0	0	0	0	75	10	1	0			7	
 38	Madam Fortuna	Madam Fortuna	1011	50	10	0	5	60	10	2	100	Pendant of Luck		4	
 39	The Lions	Louis	291	285	75	1	25	500	50	1	100			7	
 40	Hornets	Mortada	293	288	75	1	20	500	50	1	100			4	
@@ -62,10 +62,10 @@ id	name	bossname	com	unit	nrunits	level	minmen	minpay	xp	randequip	recrate	item1
 61	Otto the Great	Otto	1334	1124	100	1	10	350	10	2	100	Crown of Command		2	
 62	Nergash's Damned Legion	Nergash	310	195	125	1	20	350	10	1	10	Crown of Bones		7	
 63	Ghoul Father	Yazrid ibn Hassar	481	198	75	1	25	300	10	1	100	Lifelong Protection	Crown of Bones	7	
-64	"Mamor, the White Wizard"	Mamor	100	287	10	1	0	150	10	1	50	Lightweight Scale Mail		7	
+64	Mamor, the White Wizard	Mamor	100	287	10	1	0	150	10	1	50	Lightweight Scale Mail		7	
 65	Göte	Göte	95	433	30	1	10	250	5	2	20			7	
 66	The Master Druid	Erbum	105	361	50	1	10	300	0	1	100			7	
-67	"Ferrus, the Iron Wizard"	Ferrus	477	532	10	1	0	200	0	1	50	Amulet of Antimagic		7	
+67	Ferrus, the Iron Wizard	Ferrus	477	532	10	1	0	200	0	1	50	Amulet of Antimagic		7	
 68	The Boar Mage	Baratus	552	549	50	1	10	200	0	2	50			7	
 69	Reavers of the Deep	Gladd Yog	976	975	50	1	25	300	0	1	100			7	
 70	God's Enforcers	Guiseppe IV	149	289	150	2	50	900	75	2	100	Sceptre of Authority	Crown of Command	6	
