@@ -1776,6 +1776,10 @@ var displayorder_other = Utils.cutDisplayOrder(aliases, formats,
 	'tmpbloodslaves',	'temp gems', function(v){ return v!='0' && Format.PerBattle(Format.Gems('B' + v)); },
 
 	'onebattlespell','casts each battle',		Utils.spellRef,
+	'3castbattlespell','casts each battle when 3+ present',	Utils.spellRef,
+	'addupkeep',	'upkeep as if gold cost were higher by',
+	'faysummon',	'extra fay folk when summoning',
+	'assencloc',	'assassinations take place',	{'0':'random suitable location', '1':'in a tavern', '2':'in a courtyard', '3':'outside', '4':'in a bedroom', '5':'in a library', '6':'in a commoner house', '7':'in a summoning circle', '8':'at the entrance of a summoning circle'},
 
 	'regeneration',	'regeneration',	Format.Percent,
 	'enchantedblood', 'enchanted blood', function(v) { return String(v) + ' ';},
@@ -2340,6 +2344,9 @@ var flagorder = Utils.cutDisplayOrder(aliases, formats,
 [
 //	dbase key	displayed key		function/dict to format value
 	'slow_to_recruit',	'slow to recruit',
+	'noweapon',	'no fist attack when unarmed',
+	'tolerateund',	'tolerates undead in squad',
+	'forcess',	'always changes to second shape when killed',
 	'reqtemple', 'requires temple',
 	'reqlab', 'requires lab',
 	'noreqlab', 'doesn\'t require lab',
@@ -2496,6 +2503,8 @@ var modderkeys = Utils.cutDisplayOrder(aliases, formats,
 ]);
 var ignorekeys = {
 	modded:1,
+	leaderbonus:1,	// part of leader
+	mountgoldcost:1,	// part of goldcost
 	dupes:1,
 	sorttype:1,
 	typechar:1,
