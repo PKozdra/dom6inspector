@@ -1779,7 +1779,7 @@ var displayorder_other = Utils.cutDisplayOrder(aliases, formats,
 	'3castbattlespell','casts each battle when 3+ present',	Utils.spellRef,
 	'addupkeep',	'upkeep as if gold cost were higher by',
 	'faysummon',	'extra fay folk when summoning',
-	'assencloc',	'assassinations take place',	{'0':'random suitable location', '1':'in a tavern', '2':'in a courtyard', '3':'outside', '4':'in a bedroom', '5':'in a library', '6':'in a commoner house', '7':'in a summoning circle', '8':'at the entrance of a summoning circle'},
+	'assencloc',	'assassinations take place',	{'0':'random suitable location', '1':'in a tavern', '2':'in a courtyard', '3':'outside', '4':'in a bedroom', '5':'in a library', '6':'in a sturdy house', '7':'in a summoning circle', '8':'in a ritual chamber', '9':'in old ruins'},
 
 	'regeneration',	'regeneration',	Format.Percent,
 	'enchantedblood', 'enchanted blood', function(v) { return String(v) + ' ';},
